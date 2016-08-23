@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    DocumentRoot "/var/www/summercamp/workshops/nofw/public"
+    ServerName nofw.websc
+    <Directory "/var/www/summercamp/workshops/nofw/public">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
