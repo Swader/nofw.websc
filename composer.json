@@ -9,7 +9,9 @@
       "email": "bruno@skvorc.me"
     }
   ],
-  "require": {},
+  "require": {
+    "twig/twig": "^1.24"
+  },
   "autoload": {
     "psr-4": {
       "nofw\\app\\": "app"

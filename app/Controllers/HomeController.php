@@ -4,8 +4,16 @@ namespace nofw\app\Controllers;
 
 class HomeController
 {
+    /** @var \Twig_Environment */
+    private $twig;
+
+    public function __construct(\Twig_Environment $te)
+    {
+        $this->twig = $te;
+    }
+
     public function indexAction()
     {
-        echo "Hello from Home::index!";
+        $this->twig->render('home/index.twig', ['message' => 'Yay!']);
     }
 }
