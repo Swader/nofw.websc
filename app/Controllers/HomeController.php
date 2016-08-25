@@ -14,6 +14,6 @@ class HomeController
 
     public function indexAction()
     {
-        $this->twig->render('home/index.twig', ['message' => 'Yay!']);
+        $this->twig->display('home/index.twig', ['message' => 'Yay!']);
     }
 }

@@ -16,5 +16,8 @@
     "psr-4": {
       "nofw\\app\\": "app"
     }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^3.1"
   }
 }
