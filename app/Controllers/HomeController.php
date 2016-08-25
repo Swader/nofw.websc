@@ -6,10 +6,16 @@ use Psr\Log\LoggerInterface;
 
 class HomeController
 {
-    /** @var \Twig_Environment */
+    /**
+     * @Inject
+     * @var \Twig_Environment
+     */
     private $twig;
 
-    /** @var LoggerInterface */
+    /**
+     * @Inject
+     * @var LoggerInterface
+     */
     private $logger;
 
     public function __construct(\Twig_Environment $te, LoggerInterface $logger)
@@ -20,7 +26,6 @@ class HomeController
 
     public function indexAction()
     {
-        $this->logger->info('We are in index.');
         $this->twig->display('home/index.twig', ['message' => 'Yay!']);
     }
 }
