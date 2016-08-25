@@ -10,9 +10,8 @@ assets/bower/*
 *.iws
 
 # Logs
-logs
-error.log
-access.log
+logs/*
+!.gitkeep
 
 # Netbeans
 nbproject
