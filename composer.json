@@ -14,7 +14,9 @@
     "monolog/monolog": "^1.21",
     "php-di/php-di": "^5.4",
     "doctrine/annotations": "^1.2",
-    "nikic/fast-route": "^1.0"
+    "nikic/fast-route": "^1.0",
+    "vlucas/phpdotenv": "^2.3",
+    "swiftmailer/swiftmailer": "^5.4"
   },
   "autoload": {
     "psr-4": {

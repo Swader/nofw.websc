@@ -1,11 +1,15 @@
 <?php
 
 use DI\ContainerBuilder;
+use Dotenv\Dotenv;
 
 define('ROOT', realpath(__DIR__.'/..'));
 session_start();
 
 require_once '../vendor/autoload.php';
+
+$dotenv = new Dotenv(ROOT);
+$dotenv->load();
 
 $containerBuilder = new ContainerBuilder();
 $container = $containerBuilder
